@@ -59,7 +59,7 @@ print(Event_Pydantic.schema_json(indent=4))
 
 
 async def run():
-    await Tortoise.init(db_url="sqlite://:memory:", modules={"models": ["__main__"]})
+    await Tortoise.init(db_url="sqlite://drmemory:", modules={"models": ["__main__"]})
     await Tortoise.generate_schemas()
 
     # Create objects
