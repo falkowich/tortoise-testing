@@ -5,7 +5,7 @@ import json
 
 pp = PrettyPrinter(indent=4)
 db_on_disk = "sqlite://sqlite.db"
-db_in_mem = "sqlite://:memory"
+db_in_mem = "sqlite://:memory:"
 
 
 def open_file() -> json:
